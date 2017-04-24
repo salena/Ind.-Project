@@ -16,14 +16,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ApartmentActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_apartment"
-            android:theme="@style/FullscreenTheme" />
-        <activity
             android:name=".calculator_activity"
             android:label="@string/title_activity_calculator_activity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ApartmentActivity"
+            android:label="@string/title_activity_apartment"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>

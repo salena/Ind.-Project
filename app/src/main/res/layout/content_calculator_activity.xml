@@ -14,27 +14,65 @@
     tools:showIn="@layout/activity_calculator_activity">
 
     <TextView
-        android:text="Enter your base salary:"
+        android:text="Your suggested monthly rent:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="137dp"
-        android:layout_marginStart="137dp"
-        android:layout_marginTop="372dp"
-        android:id="@+id/textView2"
+        android:layout_marginTop="80dp"
+        android:id="@+id/monthly"
+        android:layout_below="@+id/salaryInput"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/back"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_toStartOf="@+id/input"
+        android:layout_toLeftOf="@+id/input" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:ems="10"
-        android:layout_marginLeft="130dp"
-        android:layout_marginStart="130dp"
-        android:layout_marginTop="397dp"
         android:id="@+id/salaryInput"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Enter your base salary:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/input"
+        android:layout_above="@+id/salaryInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp" />
+
+    <TextView
+        android:text="MY RENT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_below="@+id/back"
+        android:layout_toRightOf="@+id/back"
+        android:layout_toEndOf="@+id/back" />
+
+    <TextView
+        android:text="CALCULATOR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/salaryInput"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/calculate" />
 </RelativeLayout>

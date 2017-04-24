@@ -11,32 +11,53 @@
     tools:context="com.example.salena.myfirstapp.MainActivity">
 
     <Button
+        android:text="Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/back"
+        android:layout_toLeftOf="@+id/apartments"
+        android:layout_toStartOf="@+id/apartments" />
+
+    <Button
         android:text="Calculator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/calculator"
+        android:id="@+id/calculate"
         android:elevation="0dp"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/textView3"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="176dp" />
+        android:layout_marginTop="80dp" />
 
     <Button
         android:text="Apartments"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
         android:id="@+id/apartments"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/calculator"
-        android:layout_alignStart="@+id/calculator" />
+        android:layout_below="@+id/calculate"
+        android:layout_alignRight="@+id/calculate"
+        android:layout_alignEnd="@+id/calculate"
+        android:layout_marginTop="68dp" />
 
     <TextView
-        android:text="MY RENT CALCULATOR"
+        android:text="CALCULATOR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="26dp"
+        android:layout_marginEnd="26dp" />
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView3"
-        android:layout_above="@+id/calculator"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="41dp" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:text="MY RENT"
+        android:layout_below="@+id/back"
+        android:layout_alignLeft="@+id/calculate"
+        android:layout_alignStart="@+id/calculate" />
 
 </RelativeLayout>
