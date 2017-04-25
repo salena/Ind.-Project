@@ -7,6 +7,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.net.Uri;
+import android.widget.ImageView;
+
+
 
 /**
  * Created by Salena on 4/21/2017.
@@ -24,6 +28,9 @@ public class ApartmentActivity extends AppCompatActivity implements View.OnClick
         Button button3 = (Button) findViewById(R.id.back);
         button3.setOnClickListener(this);
         TextView myTextView = new TextView(this);
+        Button button4 = (Button)findViewById(R.id.apartmentView);
+        button4.setOnClickListener(this);
+        //Button.setOnClickListener(this);
 
     }
 
@@ -41,6 +48,21 @@ public class ApartmentActivity extends AppCompatActivity implements View.OnClick
             intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         }
+        else if(v.getId() == R.id.apartmentView) {
+
+                //Uri uri = Uri.parse("http://www.apartments.com");
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.apartments.com")); // Create a new intent - stating you want to 'view something'
+                startActivity(i);
+            }
+
+        }
+
+
+
 
     }
-}
+
+
+
+
+

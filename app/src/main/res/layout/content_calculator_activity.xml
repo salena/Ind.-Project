@@ -13,24 +13,6 @@
     tools:context="com.example.salena.myfirstapp.calculator_activity"
     tools:showIn="@layout/activity_calculator_activity">
 
-    <TextView
-        android:text="Your suggested monthly rent:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:id="@+id/monthly"
-        android:layout_below="@+id/salaryInput"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:text="Home"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/back"
-        android:layout_alignParentTop="true"
-        android:layout_toStartOf="@+id/input"
-        android:layout_toLeftOf="@+id/input" />
-
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -40,14 +22,55 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
+    <Button
+        android:text="Calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calculate"
+        android:layout_below="@+id/salaryInput"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="CALCULATOR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
     <TextView
         android:text="Enter your base salary:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/input"
+        android:layout_marginBottom="97dp"
         android:layout_above="@+id/salaryInput"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="19dp" />
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Your suggested monthly rent:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:id="@+id/monthly"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_below="@+id/calculate"
+        android:layout_alignLeft="@+id/input"
+        android:layout_alignStart="@+id/input" />
+
+    <Button
+        android:text="Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/back"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="88dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:text="MY RENT"
@@ -56,23 +79,6 @@
         android:id="@+id/textView4"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:layout_below="@+id/back"
-        android:layout_toRightOf="@+id/back"
-        android:layout_toEndOf="@+id/back" />
-
-    <TextView
-        android:text="CALCULATOR"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView6"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:layout_below="@+id/textView4"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:text="Calculate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/salaryInput"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/calculate" />
+        android:layout_alignRight="@+id/input"
+        android:layout_alignEnd="@+id/input" />
 </RelativeLayout>

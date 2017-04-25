@@ -11,32 +11,14 @@
     tools:context="com.example.salena.myfirstapp.MainActivity">
 
     <Button
-        android:text="Home"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/back"
-        android:layout_toLeftOf="@+id/apartments"
-        android:layout_toStartOf="@+id/apartments" />
-
-    <Button
         android:text="Calculator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/calculate"
         android:elevation="0dp"
-        android:layout_below="@+id/textView3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp" />
-
-    <Button
-        android:text="Apartments"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/apartments"
-        android:layout_below="@+id/calculate"
-        android:layout_alignRight="@+id/calculate"
-        android:layout_alignEnd="@+id/calculate"
-        android:layout_marginTop="68dp" />
+        android:layout_marginTop="220dp"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:text="CALCULATOR"
@@ -45,10 +27,8 @@
         android:id="@+id/textView5"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:layout_below="@+id/textView3"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="26dp"
-        android:layout_marginEnd="26dp" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -57,7 +37,30 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:text="MY RENT"
         android:layout_below="@+id/back"
-        android:layout_alignLeft="@+id/calculate"
-        android:layout_alignStart="@+id/calculate" />
+        android:layout_alignLeft="@+id/apartments"
+        android:layout_alignStart="@+id/apartments"
+        android:layout_marginTop="22dp" />
+
+    <Button
+        android:text="Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/back"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="87dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Apartments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/apartments"
+        android:layout_marginTop="173dp"
+        android:layout_below="@+id/calculate"
+        android:layout_alignRight="@+id/calculate"
+        android:layout_alignEnd="@+id/calculate" />
 
 </RelativeLayout>

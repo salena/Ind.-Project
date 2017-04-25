@@ -57,8 +57,8 @@ public class calculator_activity extends AppCompatActivity implements View.OnCli
         double endSalary;
 
         double taxDeduction = calculateTax(salary);
-        endSalary = (salary - ira - taxDeduction - 250);
-        monthly = endSalary/12;
+        endSalary = (salary - ira - taxDeduction - 2050);
+        monthly = (endSalary/12) - 1750;
 
         return monthly;
     }
