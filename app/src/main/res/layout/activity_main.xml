@@ -63,4 +63,13 @@
         android:layout_alignRight="@+id/calculate"
         android:layout_alignEnd="@+id/calculate" />
 
+    <Button
+        android:text="Salary Breakup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:id="@+id/breakup"
+        android:layout_below="@+id/calculate"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
